@@ -1,0 +1,72 @@
+﻿Function,Documentation,Signature,Return Type,Example Usage,Library
+Text,A run of text with a single style.,"Text(String data, {Key? key, TextStyle? style, ...})",Widget,"Text('Hello, Flutter!')",flutter:widgets
+ListView,A scrollable list that works page by page.,"ListView({Key? key, Axis scrollDirection = Axis.vertical, ...})",Widget,"ListView(children: <Widget>[Text('Item 1'), Text('Item 2')])",flutter:widgets
+Icon,A graphic representation of material design's iconography.,"Icon(IconData icon, {double? size, Color? color, ...})",Widget,"Icon(Icons.star, color: Colors.red)",flutter:material
+RaisedButton,A Material Design raised button.,"RaisedButton({Key? key, @required VoidCallback onPressed, ...})",Widget,"RaisedButton(onPressed: () {}, child: Text('Click Me'))",flutter:material
+Container,"A convenience widget that combines common painting, positioning, and sizing widgets.","Container({Key? key, Color? color, Decoration? decoration, ...})",Widget,"Container(color: Colors.blue, child: Text('Inside Container'))",flutter:widgets
+FloatingActionButton,A floating action button is a circular material design button.,"FloatingActionButton({Key? key, @required VoidCallback onPressed, ...})",Widget,"FloatingActionButton(onPressed: () {}, child: Icon(Icons.add))",flutter:material
+Scaffold,Implements the basic Material Design visual layout structure.,"Scaffold({Key? key, AppBar? appBar, Widget? body, ...})",Widget,"Scaffold(appBar: AppBar(title: Text('My App')), body: Center(child: Text('Hello, world!')))",flutter:material
+AppBar,A Material Design app bar.,"AppBar({Key? key, Widget? title, List<Widget>? actions, ...})",Widget,AppBar(title: Text('My App')),flutter:material
+Image,A widget that displays an image.,"Image({Key? key, ImageProvider? image, ...})",Widget,Image.asset('assets/flutter.png'),flutter:widgets
+FlatButton,A Material Design flat button.,"FlatButton({Key? key, @required VoidCallback onPressed, ...})",Widget,"FlatButton(onPressed: () {}, child: Text('Flat Button'))",flutter:material
+Stack,This class is useful if you want to overlap several children in a simple way.,"Stack({Key? key, AlignmentGeometry alignment = AlignmentDirectional.topStart, ...})",Widget,"Stack(children: <Widget>[Text('Bottom'), Text('Top')])",flutter:widgets
+GestureDetector,A widget that detects gestures.,"GestureDetector({Key? key, @required VoidCallback onTap, ...})",Widget,"GestureDetector(onTap: () {}, child: Text('Tap Me!'))",flutter:widgets
+InkWell,A rectangular area of a Material that responds to touch.,"InkWell({Key? key, @required VoidCallback onTap, ...})",Widget,"InkWell(onTap: () {}, child: Container(height: 50, width: 50, color: Colors.blue))",flutter:material
+ClipRRect,A widget that clips its child using a rounded rectangle.,"ClipRRect({Key? key, BorderRadius borderRadius, ...})",Widget,"ClipRRect(borderRadius: BorderRadius.circular(15.0), child: Image.asset('assets/flutter.png'))",flutter:widgets
+Padding,A widget that insets its child by the given padding.,"Padding({Key? key, @required EdgeInsetsGeometry padding, Widget? child, ...})",Widget,"Padding(padding: EdgeInsets.all(8.0), child: Text('Padded Text'))",flutter:widgets
+Align,Aligns its child within itself and optionally sizes itself based on the child's size.,"Align({Key? key, Alignment alignment = Alignment.center, Widget? child, ...})",Widget,"Align(alignment: Alignment.topRight, child: Text('Aligned Text'))",flutter:widgets
+Row,A widget that displays its children in a horizontal array.,"Row({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, ...})",Widget,"Row(children: [Icon(Icons.star), Text('Star')])",flutter:widgets
+Column,A widget that displays its children in a vertical array.,"Column({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, ...})",Widget,"Column(children: [Text('Item 1'), Text('Item 2')])",flutter:widgets
+Expanded,"A widget that expands a child of a Row, Column, or Flex.","Expanded({Key? key, int flex = 1, @required Widget child})",Widget,Expanded(child: Text('Expanded Text')),flutter:widgets
+Positioned,A widget that controls where a child of a Stack is positioned.,"Positioned({Key? key, double? top, double? left, ...})",Widget,"Positioned(top: 10, left: 10, child: Text('Positioned Text'))",flutter:widgets
+DropdownButton,A material design button for selecting from a list of items.,"DropdownButton({Key? key, @required List<DropdownMenuItem<T>> items, T? value, ...})",Widget,"DropdownButton<String>(items: ['Option 1', 'Option 2'].map((String value) {return DropdownMenuItem<String>(value: value, child: Text(value));}).toList(), onChanged: (_) {}),",flutter:material
+FlatButton,A Material Design flat button.,"FlatButton({Key? key, @required VoidCallback onPressed, ...})",Widget,"FlatButton(onPressed: () {}, child: Text('Flat Button'))",flutter:material
+CircleAvatar,A circle that represents a user.,"CircleAvatar({Key? key, Widget? child, Color? backgroundColor, ...})",Widget,"CircleAvatar(backgroundColor: Colors.blue, child: Text('AB'))",flutter:widgets
+Divider,"A one logical pixel thick horizontal line, with padding on either side.","Divider({Key? key, double? height, double? thickness, ...})",Widget,Divider(color: Colors.blue),flutter:material
+Checkbox,A Material Design checkbox.,"Checkbox({Key? key, @required bool? value, @required ValueChanged<bool?>? onChanged, ...})",Widget,"Checkbox(value: true, onChanged: (value) {})",flutter:material
+TextField,A material design text field.,"TextField({Key? key, TextEditingController? controller, ...})",Widget,TextField(decoration: InputDecoration(labelText: 'Enter text')),flutter:material
+Slider,A Material Design slider.,"Slider({Key? key, @required double value, @required ValueChanged<double>? onChanged, ...})",Widget,"Slider(value: 0.5, onChanged: (double value) {})",flutter:material
+Switch,A Material Design switch.,"Switch({Key? key, @required bool value, @required ValueChanged<bool>? onChanged, ...})",Widget,"Switch(value: true, onChanged: (bool value) {})",flutter:material
+Card,A Material Design card.,"Card({Key? key, bool? elevated = true, ...})",Widget,Card(child: Text('Card Content')),flutter:material
+Tooltip,A material design tooltip.,"Tooltip({Key? key, @required String message, Widget? child, ...})",Widget,"Tooltip(message: 'This is a tooltip', child: Icon(Icons.info))",flutter:material
+DataTable,A material design data table.,"DataTable({Key? key, @required List<DataColumn> columns, List<DataRow>? rows, ...})",Widget,"DataTable(columns: [DataColumn(label: Text('Name')), DataColumn(label: Text('Age'))], rows: [])",flutter:material
+LinearProgressIndicator,A material design linear progress indicator.,"LinearProgressIndicator({Key? key, double? value, ...})",Widget,LinearProgressIndicator(value: 0.5),flutter:material
+TabBar,A Material Design widget that displays a horizontal row of tabs.,"TabBar({Key? key, @required List<Tab> tabs, ...})",Widget,"TabBar(tabs: [Tab(text: 'Tab 1'), Tab(icon: Icon(Icons.star))])",flutter:material
+Drawer,A Material Design panel that slides in horizontally from the edge of a Scaffold.,"Drawer({Key? key, Widget? child, ...})",Widget,Drawer(child: ListView(children: [ListItem(title: Text('Item 1'))])),flutter:material
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
